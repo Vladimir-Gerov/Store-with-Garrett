@@ -1,23 +1,13 @@
-import {Outlet, Link} from "react-router-dom";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
+const Layout = () => {
+  return (
+    <>
+      <Navbar />
+      <Footer />
+    </>
+  );
+};
 
-function Navbar() {
-    return (
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="./pages/Home">Home</Link>
-            </li>
-            <li>
-              <Link to="/Store">Store</Link>
-            </li>
-          </ul>
-        </nav>
-        <hr />
-        <Outlet />
-      </div>
-    );
-  }
-
-  export default Navbar
+export default Layout;

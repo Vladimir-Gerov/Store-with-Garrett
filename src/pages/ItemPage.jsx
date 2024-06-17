@@ -1,10 +1,8 @@
-
-
+import { useParams } from "react-router-dom";
 
 const ItemPage = () => {
-  return 
-
-  (<h1>This is the Item page.</h1>)
+const {productid} = useParams()
+  return (<h1>This is the Item page.{productid}</h1>)
 };
 
 export default ItemPage;
