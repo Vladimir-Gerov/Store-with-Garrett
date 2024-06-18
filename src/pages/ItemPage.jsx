@@ -1,3 +1,5 @@
+
+// Using useParams HOOK from react-router-dom PACKAGE to manage the dynamic routes in the URL.
 import { useParams } from "react-router-dom";
 
 const ItemPage = () => {

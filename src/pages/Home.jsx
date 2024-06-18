@@ -1,3 +1,6 @@
+
+// Building the page using a function and exporting it.
+
 const Home = () => {
   return (
     <div>
@@ -11,6 +14,7 @@ const Home = () => {
     </div>
   );
 };
+
 
 // function Home() {
 //     return (

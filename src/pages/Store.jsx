@@ -1,4 +1,6 @@
-import Card from "../components/Card";
+// Importing the Card component to use it in the Store component
+import Card from "../components/card";
+
 
 const Store = () => {
   return (
