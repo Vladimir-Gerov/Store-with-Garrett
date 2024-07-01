@@ -3,6 +3,7 @@
 
 // Importing component from library
 import { Routes, Route } from "react-router-dom";
+
 // importing all needed components to build the final version of the application
 import "./App.css";
 import Home from "./pages/Home";
@@ -26,7 +27,7 @@ function App() {
          <Route path="store" element={<Store />} />
          {/* //dynamic route (declaired with :)  */}
           <Route path="store/:productid" element={<ItemPage />} />
-          
+          <Route path="/*" element={<div>Error</div>}/>
         </Route>
       </Routes>
     </div>
