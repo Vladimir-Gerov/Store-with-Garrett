@@ -23,7 +23,7 @@ const getSingleProduct = async (id)=> {
     } catch (error) {
       console.error(error);
     }}
-    // + write a second function to get a single product by id 
+    //write a second function to get a single product by id 
     //use it to fetch a single item in the single item page
     //use useParams to get a reference to the id
     //hint: this function will need to take the id as an argument

@@ -26,7 +26,7 @@ function App() {
           <Route index element={<Home />} />
          <Route path="store" element={<Store />} />
          {/* //dynamic route (declaired with :)  */}
-          <Route path="store/:productid" element={<ItemPage />} />
+          <Route path="store/:productId" element={<ItemPage />} />
           <Route path="/*" element={<div>Error</div>}/>
         </Route>
       </Routes>

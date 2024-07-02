@@ -1,9 +1,10 @@
 // Importing the Card component to use it in the Store component
 
-// import Card from "../components/card";
+import Card from "../components/Card";
 import GoBack from "../components/GoBack";
 import { getProducts } from "../lib/fakeStore";
 import { useEffect, useState } from "react";
+import {Link} from "react-router-dom";
 
 
 
@@ -30,7 +31,6 @@ import { useEffect, useState } from "react";
 const Store = () => {
   const [products, setProducts] = useState();
 
-//  console.log(products); 
   useEffect(()=>{
       getProducts()
       .then(data => setProducts(data))
@@ -41,7 +41,7 @@ const Store = () => {
  
  <h1>Store page!</h1>
  {/* replace this part with your cards */}
- {products && products.map((product)=>{
+ {/* {products && products.map((product)=>{
    return (
     <ul key={product.id}>
       <h2>{product.title}</h2>
@@ -51,7 +51,20 @@ const Store = () => {
     
 </ul>
   )
-})}
+})} */}
+
+
+{products && products.map((product) => (
+        <Link to={`/product/${product.id}`} key={product.id} style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Card 
+            title={product.title} 
+            description={product.description} 
+            price={product.price} 
+            image={product.image} 
+          />
+        </Link>
+      ))}
+
  
       <GoBack></GoBack>
   </div>
