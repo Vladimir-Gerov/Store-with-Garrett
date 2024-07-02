@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 
 
 // import { useNavigate } from "react-router-dom";
-
 // const GoBack = () => {
 //   const navigate = useNavigate();
 //   const handleClick = () => {
@@ -16,8 +15,12 @@ import { useEffect, useState } from "react";
 //   };
 //   return <button onClick={handleClick}>Go Back</button>;
 // };
-
 // export default GoBack;
+
+
+
+
+
 
 //replace the ul that's below with your card component, so that a card is rendered for each product,
 //that displays the product info-style it a little bit

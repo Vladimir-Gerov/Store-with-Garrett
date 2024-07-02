@@ -45,5 +45,6 @@ const ItemPage = () => {
     
  </ul>;
 };
+ItemPage()
 
 export default ItemPage;
